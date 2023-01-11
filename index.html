@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="website icon"type='png' href="./assest/img/icon.png">
+    <link rel="stylesheet" href="./assest/style/style.css" />
+    <title>Canvas</title>
+  </head>
+  <body>
+ 
+    <div class="G-flex">
+      <div class="G-function" style="width: 250px;">
+   
+             <div class="G-fx" style="align-items: center;justify-content: center;">
+              <input type="number"  value="1" id="xValue1">
+              <h1>X</h1>
+              <input type="number" class="G-Degree" value="2"id="xValue2" >
+              <h1>+</h1>
+              <input type="number"  value="1" id="xValue3">
+              <h1>X</h1>
+              <input type="number" class="G-Degree-2" value="1" id="xValue4">
+              <h1>+</h1>
+              <input type="number" value="2" id="xValue5">
+              <h1>=0</h1>
+              
+             </div>
+          <div>
+            <img src="./assest/img/play.png" alt="#" class="cnd" onclick="foo()"> 
+      
+            <img src="./assest/img/reload.png" alt="#" id="button" onclick="Reload()" >
+          </div>
+
+      </div>
+      <!-- <input type="number"  value="30" id="xValue">
+      <input type="number" value="30" id="yValue"> -->
+        <!-- <input type="number" id="xValue" name="kasGo" >
+        <input type="button" value="GoTO" onclick="foo()"> -->
+    </div>
+
+    <div class="G-flex">
+      <canvas
+        id="canvas_plod"
+        width="750"
+        height="550"
+        style="background-color: #ead9ce; transition: all 2s;"
+      ></canvas>
+     
+    </div>
+
+    <!-- <style contenteditable="" style="display: block; width: pre;">
+    html{
+        /* background: #BADA55; */
+    }
+    </style> -->
+    <script src="./assest/script/script.js"></script>
+  </body>
+</html>

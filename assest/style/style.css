@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* transition: all 2s; */
+}
+
+
+.G-flexs {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end
+}
+
+.G-fx {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 100vh; */
+    /* margin: 11px; */
+}
+
+.G-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin: 11px;
+}
+
+button {
+    cursor: pointer;
+    height: 28px;
+    font-size: 18px;
+    background-color: darkcyan;
+    border-radius: 25px;
+}
+
+button:focus {
+    cursor: grab;
+    background-color: darkblue;
+    color: aqua;
+}
+
+.G-function {
+    position: relative;
+    width: 400px;
+    height: 100px;
+    background-color: darkcyan;
+}
+
+input {
+    /* -webkit-appearance: none; */
+    text-align: center;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 25px;
+    background-color: blue;
+    /* border-radius: 50%; */
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+.G-Degree{
+    position: absolute;
+    left: 71px;
+    top: 0;
+    height:12px;
+    width: 18px;
+
+}
+.G-Degree-2{
+    position: absolute;
+    left: 141px;
+    top: 0;
+    height: 12px;
+    width:18px;
+}
+.cnd{
+    cursor: progress;
+    width: 30px;  
+}
+#button{
+    display: none;
+
+    cursor: pointer;
+    width: 30px;
+    animation: rotate 3s linear infinite;
+}
+@keyframes rotate {
+    
+    0% {
+        transform: rotate(0deg);
+        /* width: 50px; */
+    }
+
+   
+
+    100% {
+        /* width: 80px; */
+        transform: rotate(360deg);
+    }
+
+}
